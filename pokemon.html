@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+        </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="pokedex.css">
+
+    
+    <title>Dan's Pokedex</title>
+</head>
+
+<body>
+
+    <audio src="theme.ogg" preload="auto" autoplay loop></audio>
+    <header >
+       <div class="header">
+        <input type="text" class="shadow appearance-none border rounded w py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="search">
+        <button id="" onclick="buscarPokemon()">Search</button>
+       </div>
+    </header>
+    <div class="loader"></div>
+
+    <div class="container">
+        <img src="logo.png" id="logo">
+        <h1>Dan's Pokedex</h1>
+
+        <div class="group">
+            <button class="region" onclick = 'comprobarRegion("Kanto")'>
+                Kanto
+            </button>
+            <button class="region" onclick = 'comprobarRegion("Johto")'>
+                Johto       
+            </button>
+            <button class="region" onclick = 'comprobarRegion("Hoenn")'>
+                Hoenn
+            </button>
+            <button class="region" onclick = 'comprobarRegion("Sinnoh")'>
+                Sinnoh
+            </button>
+        </div>
+       
+        <ol id="pokedex"></ol>
+    </div>
+
+
+    <script src="pokedex.js"></script>
+</body>
+
+</html>

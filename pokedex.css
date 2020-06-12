@@ -1,0 +1,201 @@
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    height: 250px;
+    /* width: 140px */
+}
+
+header{
+    display: flex;
+}
+
+header div{
+    margin-left: 1100px;
+    margin-top: 20px;
+}
+
+header div button{
+    border-color: black;
+    color: black;
+    margin: 2px;
+    background-color: white;
+    border-style: double;
+    font-family: 'Press Start 2P', cursive;
+    padding: 8px 12px;
+}
+
+header div input{
+    height: 40px;
+}
+
+
+
+body{
+
+    animation: change 15s infinite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    color: white;
+    height: 100%;
+}
+@keyframes change{
+    0%{background-color: #833ab4;}
+    10%{background-color:#bb2d6f;}
+    20%{background-color: #fd1d1d;}
+    30%{background-color: #fc7836;}
+    40%{background-color: #fcb045;}
+    50%{background-color: #fcb045;}
+    60%{background-color: #fc7836;}
+    70%{background-color: #fd1d1d;}
+    80%{background-color:#bb2d6f;}
+    90%{background-color:#bb2d6f;}
+    100%{background-color: #833ab4;}
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background:transparent url('Infinity-1s-200px.gif') 50% 50% no-repeat;
+    opacity: .8;
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+}
+
+.region{
+    border-color: black;
+    color: black;
+    margin: 2px;
+    background-color: white;
+    border-style: double;
+    font-family: 'Press Start 2P', cursive;
+}
+.region:hover{
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+}
+
+
+
+
+.card{
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    
+}
+
+.card:hover{
+    animation: bounce 0.5s linear;
+    cursor: pointer;
+}
+
+@keyframes bounce{
+    20%{
+        transform: translateY(-9px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-3px);
+    }
+    80%{
+        transform: translateY(-0px);
+    }
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.card-subtitle{
+    font-weight: lighter;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.card-image{
+    height: 200px;
+    margin: auto;
+}
+
+#pokedex{
+    padding-inline-start: 0 ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+    grid-gap: 20px;
+    margin-top: 5px;
+}
+
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.popup
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: #f4f4f4;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closebtn
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+button{
+    border: none;
+    border-radius: 3px;
+    color: #f4f4f4;
+    font-size: 20px;
+    background-color: orangered;
+    padding: 10px 20px;
+    
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2px darkred; 
+}
+
+#link{
+    color:orangered;
+    padding: 15px;
+    font-size: 30px;
+    font-style: italic;
+}
